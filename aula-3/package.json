@@ -1,0 +1,16 @@
+{
+  "name": "aula-3",
+  "version": "1.0.0",
+  "description": "reprograma node",
+  "main": "reprograma-module.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Mayara",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11",
+    "mongoose": "^5.3.14"
+  }
+}
