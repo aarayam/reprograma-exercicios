@@ -1,0 +1,77 @@
+/* GERAL */
+* {
+    box-sizing: border-box;
+}
+
+
+html, body{
+    height: 100%;
+    font-family: 'PT sans', Arial, Helvetica, sans-serif;
+  }
+body { 
+    background-image: url(https://images.pexels.com/photos/434337/pexels-photo-434337.jpeg) ;
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.text-select::selection {
+    background-color: #8e44ad;
+    color: white;
+  }
+
+/* FONTS */
+h1 {
+    color: #4F4F4F;
+    font-size: 35px;
+}
+
+h2 {
+    color: #bfbfbf;   
+    font-size: 25px;
+}
+
+/* SEÇÃO SOBRE */
+.secao-sobre {
+    background-color: white;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.sobre-conteudo__img {
+    margin-top: 5%;
+    width: 25%;
+    filter: grayscale(90%);
+    border-radius: 50%;  
+}  
+    
+.sobre-conteudo {
+    /* font-family: 'Lato', sans-serif; */
+    text-align: center;
+}
+
+.sobre-conteudo__redes-sociais {
+    text-align: center;
+    margin-top: 10%;
+    padding-bottom: 10%;
+}
+
+
+
+.sobre-conteudo__redes-sociais img {
+    width: 10%;
+    height: 10%;
+    margin-left: 5px;
+    filter: grayscale(90%);
+}
+
+.sobre-conteudo__redes-sociais img:hover {
+    filter: grayscale(0%);
+}

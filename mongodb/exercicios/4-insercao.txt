@@ -1,0 +1,28 @@
+1.	Insira 5 novos registros conforme descri��es abaixo:
+Titulo = Titulo U
+Descri��o = Java
+Conclu�da = verdadeiro
+
+    db.todo.insert({ "titulo" : "Titulo U", "descricao" : "java", concluida: true }) 
+
+2. Titulo = Titulo O
+Descri��o = CSharp
+Conclu�da = falso
+
+        db.todo.insert({ "titulo" : "Titulo O", "descricao" : "CSharp", concluida: false }) 
+
+3. Titulo = Titulo P
+Descri��o = Firebase
+
+        db.todo.insert({ "titulo" : "Titulo P", "descricao" : "Firebase"}) 
+
+4. Titulo = Titulo Y
+Descri��o = Microsoft
+        db.todo.insert({ "titulo" : "Titulo Y", "descricao" : "Microsoft"}) 
+
+
+5. Titulo = Titulo R
+Descri��o = Oracle
+Data de Inclus�o = data de hoje
+        db.todo.insert({ "titulo" : "Titulo R", "descricao" : "Oracle", data: new Date() }) 
+

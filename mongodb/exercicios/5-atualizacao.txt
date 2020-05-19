@@ -1,0 +1,28 @@
+1.	Atualize os registros criados no exerc�cio anterior, com os filtros abaixo (n�o se esque�a de buscar pelo _id):
+Titulo = Titulo Uava
+Descri��o = Java
+Conclu�da = verdadeiro
+    db.todo.update({"_id": ObjectId("5bff2a3a99b47d94bb18b27e")}, {$set : {"titulo" : "Titulo Uava"}})
+    db.todo.find({"_id" : ObjectId("5bff2a3a99b47d94bb18b27e")}).pretty()
+
+Titulo = Titulo OSharp
+Descri��o = CSharp
+Conclu�da = falso
+    db.todo.update({"_id" : ObjectId("5bff2c6099b47d94bb18b27f")}, {$set : "titulo" : "Titulo Osharp"}})
+    db.todo.find({"_id" : ObjectId("5bff2c6099b47d94bb18b27f")}).pretty()
+
+Titulo = Titulo Pirebase
+Descri��o = Firebase
+    db.todo.update({"_id" : ObjectId("5bff2c9899b47d94bb18b280")}, {$set : "titulo" : "Titulo Pirebase"}})
+    db.todo.find({"_id": ObjectId("5bff2c9899b47d94bb18b280")}).pretty()
+
+Titulo = Titulo Ycrosoft
+Descri��o = Microsoft
+    db.todo.update({"_id" : ObjectId("5bff2cc599b47d94bb18b281")}, {$set : "titulo" : "Titulo Ycrosoft"})
+    db.todo.find({"_id" : ObjectId("5bff2cc599b47d94bb18b281")}).pretty()
+
+Titulo = Titulo Roracle
+Descri��o = Oracle
+Data de Inclus�o = data de hoje
+    db.todo.update({"_id": ObjectId("5bff2e0b99b47d94bb18b282")}, {$set : {"titulo" : "Titulo Roracle", "data": new Date() }})
+    db.todo.find({"_id" : ObjectId("5bff2e0b99b47d94bb18b282")}).pretty

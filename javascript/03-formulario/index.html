@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercício 6</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <form action="#" class="form">
+
+        <div>
+            <label for="texto">Usuário</label>
+            <input type="text" name="texto" class="half-col" id="usuario">
+        </div>
+
+        <div>
+            <label for="texto">Senha</label>
+            <input type="text" name="texto" class="half-col" id="senha">
+        </div>
+
+
+        <div>
+            <label for="texto">Escolha um valor</label>
+            <input type="text" name="valor">
+        </div>
+        
+
+        <div>
+            <div class="half-col"></div>
+        <button class="btn btn_grey" onclick="reset()" value="Limpar" >Limpar</button>
+            <input class="btn btn_purple" type="submit" value="Enviar" id="btnEnviar">
+
+        </div>
+    </form>
+    <script>
+    var btnEnviar = document.querySelector ('#btnEnviar');
+    btnEnviar.addEventListener    ('click', function(event){
+        event.preventDefault();
+
+    function reset() {
+    document.getElementById("myForm").reset();
+}
+
+    var usuario = document.querySelector('#usuario').value;
+    var senha = document.querySelector('#senha').value;
+
+
+
+    if (usuario == "") {
+        alert('Preencha o campo do usuário.')
+};
+    if (senha < 6) {
+        alert('Senha deve ter pelo menos 6 caracteres')
+    };
+    });
+
+    </script>
+
+</body>
+</html>
+

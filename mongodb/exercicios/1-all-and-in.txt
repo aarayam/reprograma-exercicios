@@ -1,0 +1,36 @@
+SOLUÇÃO DOS EXERCÍCIOS - AULA 27.11.2018
+
+1.	Selecione todos os registros.
+    db.todo.find()
+
+2.	Selecione todos os registros e deixe a com apresenta��o melhor.
+    db.todo.find().pretty()
+
+3.	Selecione todos os registros em que o t�tulo seja igual a �Titulo A�.
+    db.todo.find({“titulo” : “Titulo A”}).pretty()
+
+4.	Selecione todos os registros em que o t�tulo seja igual a �Titulo C�.
+    db.todo.find({“titulo” : “Titulo C”}).pretty() 
+
+5.	Selecione todos os registros em que a descri��o seja �mongodb�.
+    db.todo.find({“descricao” : “mongodb”}).pretty()
+
+6.	a)Selecione todos os registros onde o t�tulo seja igual a 'Titulo B' e a descri��o 'nodejs'.
+    db.todo.find( { “titulo” : “Titulo B” , “descricao” : “nodejs” } ).pretty()
+
+    b) Ap�s, o Titulo seja 'T�tulo K' e a descri��o seja 'html'.
+    db.todo.find( { “titulo” : “Titulo K” , “descricao” : “html” } ).pretty()
+
+
+7.	Selecione todos os registros em que o t�tulo seja igual a 'Titulo B' OU 'Titulo C'.
+    db.todo.find({ $or: [{“titulo” : “Titulo B”} , { “titulo” : “Titulo C” }] }).pretty()
+
+8.	Pegue o exerc�cio acima e inclua tamb�m aonde a descri��o seja igual 'javascript'.
+    db.todo.find({ $or: [{“titulo” : “Titulo B”} , { “titulo” : “Titulo D” } , { "descricao" : "javascript" }] }).pretty()
+
+9.	Trabalhe com um operador diferente de 'OU' para trazer todos os registros aonde as descri��es sejam iguais a 'mongodb', 'css' ou 'jquery'.
+    db.todo.find({ "descricao" : { $in : ["mongodb", "css", "jquery"] } }).pretty()
+
+Utilizando os dois operadores juntos. $or e $in.
+10.	Procure todas as tarefas cujo t�tulo seja igual a A ou a descri��o seja igual a es6 ou bootstrap.
+    db.todo.find({$or:[{"titulo": "Titulo A"}, {"descricao": {$in:["es6", "bootstrap"]}}]}).pretty()
